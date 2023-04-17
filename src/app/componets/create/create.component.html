@@ -1,0 +1,27 @@
+<div class="body">
+    <form class="details">
+        <h2>Enter the Details</h2>
+        <div class="inputBox">
+            <input class="name" required type="text" [(ngModel)]="inputformdata.firstname" name="firstname" >
+            <span>First Name</span>
+        </div>
+        <div class="inputBox">
+            <input class="name" required type="text" [(ngModel)]="inputformdata.lastname"  name="lastname">
+            <span>Last Name</span>
+        </div>
+        <div class="inputBox">
+            <input class="age" required type="text" [(ngModel)]="inputformdata.age" name="age">
+            <span>Age</span>
+        </div>
+        <div class="inputBox">
+            <input class="mail" required type="text" [(ngModel)]="inputformdata.emailid"  name="emailid">
+            <span>Email Id</span>
+        </div>
+        <div class="inputBox">
+            <input class="mail" disabled required type="text" [value]="this.edit ? this.inputformdata.id : this.formdata.length" #id name="id">
+        </div>
+        <button type="submit" class="btn btn-light" (click)="onSubmit(id.value)" >Submit</button>
+    </form>
+
+</div>
+

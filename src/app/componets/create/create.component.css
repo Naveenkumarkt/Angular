@@ -1,0 +1,82 @@
+/* .maincontent {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}*/
+
+
+.tableContent .id {
+	flex: 1 1 50px;
+}
+
+.tableContent .content {
+	flex: 1 1 100%;
+} 
+
+.body{
+	background: #1d2b3a;
+	min-height: 100vh;
+	display: flex;
+}
+.details h2{
+	color: #fff;
+}
+.details{
+	position: absolute;
+	top: 10%;
+	left: 3%;
+	font-family: 'poppins', sans-serif;
+	display: flex;
+	justify-content:left;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.inputBox{
+	position: relative;
+	width: 250px;
+}
+
+.inputBox input{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,0.25);
+	background: #1d2b3a;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+	transition: 0.5s;
+}
+
+.inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: rgba(255,255,255,0.25);
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+	color: #00dfc4;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background: #1d2b3a; 
+	/* border-left: 1px solid #00dfc4;
+	border-right: 1px solid #00dfc4; */
+}
+
+
+.inputBox input:valid,
+.inputBox input:focus
+{
+	border: 1px solid #00dfc4;
+}
+

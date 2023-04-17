@@ -1,0 +1,2 @@
+<app-create (Submitted)="getValues($event)" [inputdata]="inputdata" [getEdit]="edit" [UpdatedFormData]="formdata" ></app-create>
+<app-table (Editted)="getEdit($event)" (Deleted)="updateData($event)" [formdata]="formdata" ></app-table>

@@ -1,0 +1,27 @@
+<div class="detailsView ">
+    <table class="table table-bordered table-striped tableView">
+        <thead >
+            <tr >
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email Id</th>
+                <th  class="head" >Options</th>
+            </tr>
+        </thead>
+        
+        <tr *ngFor="let data of formdata; let i = index;"  >
+    
+            <td> {{ formdata[i].firstname }} </td>
+            <td> {{ formdata[i].lastname }} </td>
+            <td> {{ formdata[i].age }} </td>
+            <td> {{ formdata[i].emailid }} </td>
+            <td >
+                <button (click)="editData(i)" class="delete">edit</button>
+                <button (click)="deleteData(i)" class="delete">remove</button>
+            </td>
+    
+    
+        </tr>
+    </table>
+    </div>

@@ -1,0 +1,20 @@
+.detailsView{
+	position: absolute;
+	right: 20%;
+	top: 10%;
+}
+
+.head {
+	display: flex;
+	max-width: 100%;
+}
+
+.edittd {
+	display: inline-block;
+	width: 100%;
+}
+.tableView{
+	background:#fff;
+	max-width: 45rem;
+	
+}
